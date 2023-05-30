@@ -1,6 +1,5 @@
 import React from 'react';
 import { TextInputProps } from 'src/types';
-import './index.scss';
 
 const TextInput = ({
   value,
@@ -14,15 +13,13 @@ const TextInput = ({
   }`;
 
   return (
-    <div className="content-input">
-      <input
-        className={inputVariant}
-        value={value}
-        placeholder={placeholder}
-        type={type}
-        onChange={change}
-      />
-    </div>
+    <input
+      className={inputVariant}
+      value={value}
+      placeholder={placeholder}
+      type={type}
+      onChange={change}
+    />
   );
 };
 

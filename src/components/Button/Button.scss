@@ -1,0 +1,46 @@
+.button {
+  display: block;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  padding: 0.8rem 1.6rem;
+  border: none;
+  margin: 15px 0;
+  border-radius: 0.4rem;
+  color: $white;
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  &.primary {
+    background-color: $primary;
+  }
+
+  &.positive {
+    background-color: $info;
+  }
+
+  &.info {
+    background-color: $cyan;
+  }
+
+   &:not(:disabled):hover {
+    background-color: $border-color-highlight;
+  }
+
+  img {
+    margin-right: 0.8rem;
+    width: 1rem;
+  }
+
+  &-label {
+    display: flex;
+    align-items: center;
+  }
+
+  &.button-disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+  }
+}

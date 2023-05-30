@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
-import { TextInput } from 'src/components';
+import { Button, TextInput } from 'src/components';
+import FacebookSVG from 'src/assets/images/icons/facebook.svg';
+import GoogleSVG from 'src/assets/images/icons/google.svg';
 
 function App() {
   const [value, setValue] = useState('');
@@ -10,13 +12,33 @@ function App() {
   };
 
   return (
-    <div>
+    <div
+      style={{
+        width: '100%',
+        maxWidth: '500px',
+        padding: '50px',
+      }}
+    >
       <TextInput
         value={value}
         change={handleInputChange}
         placeholder="Full Name"
         type="text"
-        variant="highlight"
+        variant="neutral"
+      />
+
+      <Button variant="primary" label="Sign Up" />
+      <Button
+        variant="primary"
+        label="Log In With Facebook"
+        icon={FacebookSVG}
+      />
+      <Button variant="positive" label="Log In With Google" icon={GoogleSVG} />
+      <Button
+        variant="info"
+        label="Log In With Google"
+        icon={GoogleSVG}
+        disabled
       />
     </div>
   );
