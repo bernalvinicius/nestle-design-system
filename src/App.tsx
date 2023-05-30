@@ -27,14 +27,21 @@ function App() {
         variant="neutral"
       />
 
-      <Button variant="primary" label="Sign Up" />
+      <Button click={() => {}} variant="primary" label="Sign Up" />
       <Button
+        click={() => {}}
         variant="primary"
         label="Log In With Facebook"
         icon={FacebookSVG}
       />
-      <Button variant="positive" label="Log In With Google" icon={GoogleSVG} />
       <Button
+        click={() => {}}
+        variant="positive"
+        label="Log In With Google"
+        icon={GoogleSVG}
+      />
+      <Button
+        click={() => {}}
         variant="info"
         label="Log In With Google"
         icon={GoogleSVG}
