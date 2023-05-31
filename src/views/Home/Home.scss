@@ -1,0 +1,54 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(to bottom, $white, $system);
+}
+
+.content {
+  width: 40rem;
+  max-width: 95%;
+  background-color: $white;
+
+  &-title {
+    background-color: $border-color-highlight;
+    padding: 1rem 2rem;
+  }
+}
+
+.form {
+  padding: 1.5rem 2rem;
+}
+
+.social-buttons {
+  margin: 1rem 0;
+}
+
+.form-footer {
+  margin: 2rem 0 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.account {
+  color: $grey;
+  font-size: 1.2rem;
+  font-weight: 600;
+
+  &-login {
+    color: $cyan;
+    opacity: 0.8;
+    cursor: pointer;
+  }
+}
+
+.account-password {
+  color: $grey;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: $cyan;
+  opacity: 0.8;
+}
