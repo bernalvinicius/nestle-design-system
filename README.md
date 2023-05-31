@@ -1,4 +1,4 @@
-+# Register Form - Nestlé
+# Register Form - Nestlé
 
 ![Preview-Screens](https://i.imgur.com/FNahg6H.png)
 
